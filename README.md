@@ -1,5 +1,7 @@
 ### **POS System Application - Summary Report**
 
+### first run `npm run server`, `npm i` and `npm run dev`
+
 #### **Features Implemented**
 
 1. **Login System**:
