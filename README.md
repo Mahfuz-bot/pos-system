@@ -1,40 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+### **POS System Application - Summary Report**
 
-## Getting Started
+#### **Features Implemented**
 
-First, run the development server:
+1. **Login System**:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   - Dummy user data in `json-server`.
+   - Credential validation with mock tokens stored in `localStorage`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Products Page**:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+   - Static Site Generation (SSG) using `getStaticProps`.
+   - Low stock products highlighted with conditional styling.
+   - Incremental Static Regeneration (ISR) for data freshness.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. **POS Page**:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+   - Cart management with Context API.
+   - Dynamic totals: quantity and item and final payable amount of total added products
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Styling and UX**:
 
-## Learn More
+   - TailwindCSS for responsive, clean design.
+   - Loading and error states for better user feedback.
 
-To learn more about Next.js, take a look at the following resources:
+5. **Data Management**:
+   - Products and users stored in `json-server`.
+   - POS data handled fully on the frontend.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **Tools and Libraries Used**
 
-## Deploy on Vercel
+| **Tool/Library** | **Purpose**                                     |
+| ---------------- | ----------------------------------------------- |
+| **Next.js**      | Framework for building the app (SSG, CSR, ISR). |
+| **React**        | Frontend library for UI components.             |
+| **TailwindCSS**  | UI styling.                                     |
+| **json-server**  | Mock backend for data fetching.                 |
+| **useSWR**       | Client-side data fetching and caching.          |
+| **Context API**  | State management for the cart.                  |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+### **Final Workflow**
+
+1. **Login**: Users authenticate using dummy credentials from `json-server`.
+2. **Products Page**: Displays all products with their details and highlights low stock.
+3. **POS Page**:
+   - Users add products to the cart.
+   - Dynamic calculations for added products.
+   - Sale is processed,added on dummy.json and the cart is reset.
+
+---
+
+### **Strengths**
+
+- **Performance**: Pre-rendered static pages ensure fast loading times.
+- **Scalability**: ISR and client-side caching allow handling larger data efficiently.
+- **Flexibility**: Handles both static and dynamic data seamlessly.
+- **User-Friendly**: TailwindCSS and dynamic validation improve usability.

@@ -1,0 +1,115 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@example.com",
+      "password": "admin123"
+    },
+    {
+      "id": 2,
+      "email": "user@example.com",
+      "password": "user123"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Apple iPhone 14",
+      "price": 999.99,
+      "stock": 10,
+      "min_stock": 5,
+      "trade_offer_min_qty": 3,
+      "trade_offer_get_qty": 1,
+      "discount": 10,
+      "discount_or_trade_offer_start_date": "2024-12-01",
+      "discount_or_trade_offer_end_date": "2024-12-31"
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S23",
+      "price": 899.99,
+      "stock": 3,
+      "min_stock": 5,
+      "trade_offer_min_qty": null,
+      "trade_offer_get_qty": null,
+      "discount": null,
+      "discount_or_trade_offer_start_date": null,
+      "discount_or_trade_offer_end_date": null
+    },
+    {
+      "id": 3,
+      "name": "Sony WH-1000XM5",
+      "price": 399.99,
+      "stock": 8,
+      "min_stock": 5,
+      "trade_offer_min_qty": 2,
+      "trade_offer_get_qty": 1,
+      "discount": null,
+      "discount_or_trade_offer_start_date": null,
+      "discount_or_trade_offer_end_date": null
+    },
+    {
+      "id": 4,
+      "name": "Google Pixel 7",
+      "price": 599.99,
+      "stock": 2,
+      "min_stock": 5,
+      "trade_offer_min_qty": null,
+      "trade_offer_get_qty": null,
+      "discount": 15,
+      "discount_or_trade_offer_start_date": "2024-12-01",
+      "discount_or_trade_offer_end_date": "2024-12-10"
+    }
+  ],
+  "pos": [
+    {
+      "id": "322",
+      "product_id": 1,
+      "quantity": 3
+    },
+    {
+      "id": "53322",
+      "product_id": 3,
+      "quantity": 2
+    },
+    {
+      "id": "4d59",
+      "items": [
+        {
+          "product_id": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "dca5",
+      "items": [
+        {
+          "product_id": 1,
+          "quantity": 1
+        },
+        {
+          "product_id": 2,
+          "quantity": 1
+        },
+        {
+          "product_id": 4,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "9483",
+      "items": [
+        {
+          "product_id": 1,
+          "quantity": 1
+        },
+        {
+          "product_id": 2,
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}
